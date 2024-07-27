@@ -41,7 +41,9 @@ const App = () => {
     <div>
       <h1>Phonebook</h1>
       <ContactForm formSubmit={addNewContact} />
+      {/* <ContactForm onSubmit={updateContact} /> */}
       <SearchBox setSearchQuery={setSearchQuery} />
+
       <ContactList
         contacts={contactsFiltered}
         deleteContact={deleteContactById}
